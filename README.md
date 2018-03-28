@@ -5,8 +5,8 @@ This is the front end API of [`express-comment`](https://npmjs.com/package/expre
 `express-comment` support both Node/Browser. You need to supply the `window` object and the mounted path of backend middleware to create the instance of use for API.  
 ```javascript
 // for ReactJS or similar frameworks on Node
-import ec from 'express-comment';
-const comment = ec.frontend(window, '/middleware/path');
+import ec from 'express-comment-frontend';
+const comment = ec(window, '/middleware/path');
 
 // for <script />
 const comment = commentFactory(window, '/middleware/path');
